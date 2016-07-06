@@ -1,0 +1,125 @@
+{% extends 'scheduler/scheduler2_base.html' %}
+{% load ruhollaMath %}
+{% block customizeSchedulerCss %}
+    <LINK REL=StyleSheet HREF="/css/scheduler.css" TYPE="text/css" MEDIA=screen>
+{% endblock %}
+{% block content %}
+
+    <div id="content">
+        {% if message %}
+               {{ message }}
+        {% else %}
+        <div id="divtable">
+            <table id="contenttable">
+                <tr>
+                    <th>
+                        عنوان کار
+                    </th>
+                    <th>
+                        شروع
+                    </th>
+                    <th>
+                        پایان
+                    </th>
+                    <th>
+                        مدت زمان
+                    </th>
+                </tr>
+                {% for workTime in workTimes %}
+                    <tr>
+                        <td>
+                            {{ workTime.name }}
+                        </td>
+                        <td>
+                            {{ workTime.start }}
+                        </td>
+                        {% if forloop.last and not workTime.end %}
+                            <td>
+                                <div class="finish">
+                                    <form action="" method="POST">
+                                        <input type="hidden" name="finish" value="ok"/>
+                                        <input type="submit" value="اتمام">
+                                        {% csrf_token %}
+                                    </form>
+                                </div>
+                            </td>
+                        {% else %}
+                            <td>
+                                {{ workTime.end }}
+                            </td>
+                        {% endif %}
+                        <td>
+                            {{ workTime|rminus }}
+                        </td>
+                    </tr>
+                {% empty %}
+                    <tr>
+                        <td>
+                            There is no workTime
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                {% endfor %}
+
+
+            </table>
+        </div>
+
+        <div class="TextField">
+            <form action="" method="POST">
+                <input style="width: 90%;" type="text" name="workTime"/>
+                <input type="submit" value="ثبت"/>
+                {% csrf_token %}
+            </form>
+
+        </div>
+    </div>
+    {% endif %}
+{% endblock %}
+{% block sidebar %}
+    <div id="sidebar">
+        <div id="records">
+
+            {% for workSheet in workSheets %}
+                <br/>
+                <div class="workPacket">
+                    <a href="/scheduler2/{{ workSheet.id }}">{{ workSheet.name }} </a>
+                </div>
+            {% empty %}
+                <br/>
+                <div class="workPacket">
+                    There is no workSheet
+                </div>
+            {% endfor %}
+        </div>
+        <div id="create">
+            <script type="text/javascript">
+                if (false) {
+                    var name = prompt("Please enter work group name");
+                    if (name != null && name != "") {
+                        x = "Hello " + name + "! How are you today?";
+                    } else {
+                        alert('Please try with filled one!');
+                    }
+                }
+            </script>
+            <form action="" method="POST">
+                <!-- <table>
+                {{ form.as_table }}
+            </table> -->
+                <input type="text" name="workSheetName"/>
+                {% csrf_token %}
+                <input type="submit" value="ایجاد">
+
+            </form>
+        </div>
+    </div>
+{% endblock %}

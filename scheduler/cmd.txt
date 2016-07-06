@@ -1,0 +1,299 @@
+Creating tables ...
+Creating table schedulerApp_worksheet
+Traceback (most recent call last):
+  File "manage.py", line 10, in <module>
+    execute_from_command_line(sys.argv)
+  File "C:\Python27\lib\site-packages\django\core\management\__init__.py", line
+443, in execute_from_command_line
+    utility.execute()
+  File "C:\Python27\lib\site-packages\django\core\management\__init__.py", line
+382, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "C:\Python27\lib\site-packages\django\core\management\base.py", line 196,
+ in run_from_argv
+    self.execute(*args, **options.__dict__)
+  File "C:\Python27\lib\site-packages\django\core\management\base.py", line 232,
+ in execute
+    output = self.handle(*args, **options)
+  File "C:\Python27\lib\site-packages\django\core\management\base.py", line 371,
+ in handle
+    return self.handle_noargs(**options)
+  File "C:\Python27\lib\site-packages\django\core\management\commands\syncdb.py"
+, line 102, in handle_noargs
+    cursor.execute(statement)
+  File "C:\Python27\lib\site-packages\django\db\backends\util.py", line 40, in e
+xecute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\mysql\base.py", line 11
+4, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Python27\lib\site-packages\MySQLdb\connections.py", line 36, in defau
+lterrorhandler
+    raise errorclass, errorvalue
+django.db.utils.DatabaseError: (1050, "Table 'schedulerapp_worksheet' already ex
+ists")
+
+D:\docs\ruholla\Work\Arsh\traininig_prj\scheduler>python manage.py createsuperus
+er
+Username (leave blank to use 'rj'):
+E-mail address: r.jahande@gmail.com
+Password:
+Password (again):
+Superuser created successfully.
+
+D:\docs\ruholla\Work\Arsh\traininig_prj\scheduler>python manage.py validate
+0 errors found
+
+D:\docs\ruholla\Work\Arsh\traininig_prj\scheduler>django-admin.py makemessages -
+l ru
+Error: This script should be run from the Django SVN tree or your project or app
+ tree. If you did indeed run it from the SVN checkout or your project or applica
+tion, maybe you are just missing the conf/locale (in the django tree) or locale
+(for project and application) directory? It is not created automatically, you ha
+ve to create it by hand if you want to enable i18n for your project or applicati
+on.
+
+D:\docs\ruholla\Work\Arsh\traininig_prj\scheduler>django-admin.py makemessages -
+l ru
+Error: This script should be run from the Django SVN tree or your project or app
+ tree. If you did indeed run it from the SVN checkout or your project or applica
+tion, maybe you are just missing the conf/locale (in the django tree) or locale
+(for project and application) directory? It is not created automatically, you ha
+ve to create it by hand if you want to enable i18n for your project or applicati
+on.
+
+D:\docs\ruholla\Work\Arsh\traininig_prj\scheduler>django-admin.py makemessages -
+l ru
+processing language ru
+Error: errors happened while running xgettext on django-admin.py
+'xgettext' is not recognized as an internal or external command,
+operable program or batch file.
+
+
+D:\docs\ruholla\Work\Arsh\traininig_prj\scheduler>django-admin.py makemessages -
+l ru
+processing language ru
+Error: errors happened while running xgettext on django-admin.py
+'xgettext' is not recognized as an internal or external command,
+operable program or batch file.
+
+
+D:\docs\ruholla\Work\Arsh\traininig_prj\scheduler>django-admin.py makemessages -
+l ru
+processing language ru
+Error: errors happened while running xgettext on django-admin.py
+'xgettext' is not recognized as an internal or external command,
+operable program or batch file.
+
+
+D:\docs\ruholla\Work\Arsh\traininig_prj\scheduler>django-admin.py makemessages -
+l ru
+processing language ru
+Error: errors happened while running xgettext on django-admin.py
+'xgettext' is not recognized as an internal or external command,
+operable program or batch file.
+
+
+D:\docs\ruholla\Work\Arsh\traininig_prj\scheduler>django-admin.py makemessages -
+l ru
+processing language ru
+Error: errors happened while running xgettext on django-admin.py
+'xgettext' is not recognized as an internal or external command,
+operable program or batch file.
+
+
+D:\docs\ruholla\Work\Arsh\traininig_prj\scheduler>django-admin.py makemessages -
+l ru
+processing language ru
+Error: errors happened while running xgettext on django-admin.py
+'xgettext' is not recognized as an internal or external command,
+operable program or batch file.
+
+
+D:\docs\ruholla\Work\Arsh\traininig_prj\scheduler>django-admin.py makemessages -
+l ru
+processing language ru
+Error: errors happened while running xgettext on django-admin.py
+'xgettext' is not recognized as an internal or external command,
+operable program or batch file.
+
+
+D:\docs\ruholla\Work\Arsh\traininig_prj\scheduler>python manage.py validate
+0 errors found
+
+D:\docs\ruholla\Work\Arsh\traininig_prj\scheduler>python manage.py validate
+0 errors found
+
+D:\docs\ruholla\Work\Arsh\traininig_prj\scheduler>python manage.py syncdb
+Creating tables ...
+Creating table schedulerApp_worksheet
+Traceback (most recent call last):
+  File "manage.py", line 10, in <module>
+    execute_from_command_line(sys.argv)
+  File "C:\Python27\lib\site-packages\django\core\management\__init__.py", line
+443, in execute_from_command_line
+    utility.execute()
+  File "C:\Python27\lib\site-packages\django\core\management\__init__.py", line
+382, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "C:\Python27\lib\site-packages\django\core\management\base.py", line 196,
+ in run_from_argv
+    self.execute(*args, **options.__dict__)
+  File "C:\Python27\lib\site-packages\django\core\management\base.py", line 232,
+ in execute
+    output = self.handle(*args, **options)
+  File "C:\Python27\lib\site-packages\django\core\management\base.py", line 371,
+ in handle
+    return self.handle_noargs(**options)
+  File "C:\Python27\lib\site-packages\django\core\management\commands\syncdb.py"
+, line 102, in handle_noargs
+    cursor.execute(statement)
+  File "C:\Python27\lib\site-packages\django\db\backends\util.py", line 40, in e
+xecute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\mysql\base.py", line 11
+4, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Python27\lib\site-packages\MySQLdb\connections.py", line 36, in defau
+lterrorhandler
+    raise errorclass, errorvalue
+django.db.utils.DatabaseError: (1050, "Table 'schedulerapp_worksheet' already ex
+ists")
+
+D:\docs\ruholla\Work\Arsh\traininig_prj\scheduler>python manage.py syncdb
+Creating tables ...
+Creating table schedulerApp_worksheet
+Traceback (most recent call last):
+  File "manage.py", line 10, in <module>
+    execute_from_command_line(sys.argv)
+  File "C:\Python27\lib\site-packages\django\core\management\__init__.py", line
+443, in execute_from_command_line
+    utility.execute()
+  File "C:\Python27\lib\site-packages\django\core\management\__init__.py", line
+382, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "C:\Python27\lib\site-packages\django\core\management\base.py", line 196,
+ in run_from_argv
+    self.execute(*args, **options.__dict__)
+  File "C:\Python27\lib\site-packages\django\core\management\base.py", line 232,
+ in execute
+    output = self.handle(*args, **options)
+  File "C:\Python27\lib\site-packages\django\core\management\base.py", line 371,
+ in handle
+    return self.handle_noargs(**options)
+  File "C:\Python27\lib\site-packages\django\core\management\commands\syncdb.py"
+, line 102, in handle_noargs
+    cursor.execute(statement)
+  File "C:\Python27\lib\site-packages\django\db\backends\util.py", line 40, in e
+xecute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\mysql\base.py", line 11
+4, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Python27\lib\site-packages\MySQLdb\connections.py", line 36, in defau
+lterrorhandler
+    raise errorclass, errorvalue
+django.db.utils.DatabaseError: (1050, "Table 'schedulerapp_worksheet' already ex
+ists")
+
+D:\docs\ruholla\Work\Arsh\traininig_prj\scheduler>python manage.py syncdb
+Creating tables ...
+Creating table schedulerApp_worksheet
+Traceback (most recent call last):
+  File "manage.py", line 10, in <module>
+    execute_from_command_line(sys.argv)
+  File "C:\Python27\lib\site-packages\django\core\management\__init__.py", line
+443, in execute_from_command_line
+    utility.execute()
+  File "C:\Python27\lib\site-packages\django\core\management\__init__.py", line
+382, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "C:\Python27\lib\site-packages\django\core\management\base.py", line 196,
+ in run_from_argv
+    self.execute(*args, **options.__dict__)
+  File "C:\Python27\lib\site-packages\django\core\management\base.py", line 232,
+ in execute
+    output = self.handle(*args, **options)
+  File "C:\Python27\lib\site-packages\django\core\management\base.py", line 371,
+ in handle
+    return self.handle_noargs(**options)
+  File "C:\Python27\lib\site-packages\django\core\management\commands\syncdb.py"
+, line 102, in handle_noargs
+    cursor.execute(statement)
+  File "C:\Python27\lib\site-packages\django\db\backends\util.py", line 40, in e
+xecute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\mysql\base.py", line 11
+4, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Python27\lib\site-packages\MySQLdb\connections.py", line 36, in defau
+lterrorhandler
+    raise errorclass, errorvalue
+django.db.utils.DatabaseError: (1050, "Table 'schedulerapp_worksheet' already ex
+ists")
+
+D:\docs\ruholla\Work\Arsh\traininig_prj\scheduler>python manage.py syncdb
+Creating tables ...
+Creating table auth_permission
+Creating table auth_group_permissions
+Creating table auth_group
+Creating table auth_user_user_permissions
+Creating table auth_user_groups
+Creating table auth_user
+Creating table django_content_type
+Creating table django_session
+Creating table django_admin_log
+Creating table schedulerApp_worksheet
+Creating table schedulerApp_worktime
+
+You just installed Django's auth system, which means you don't have any superuse
+rs defined.
+Would you like to create one now? (yes/no): yes
+Username (leave blank to use 'rj'):
+E-mail address: r.jahande@gmail.com
+Password:
+Password (again):
+Superuser created successfully.
+Installing custom SQL ...
+Installing indexes ...
+Installed 0 object(s) from 0 fixture(s)
+
+D:\docs\ruholla\Work\Arsh\traininig_prj\scheduler>django-admin.py makemessages -
+l ru
+processing language ru
+Error: errors happened while running xgettext on django-admin.py
+'xgettext' is not recognized as an internal or external command,
+operable program or batch file.
+
+
+D:\docs\ruholla\Work\Arsh\traininig_prj\scheduler>python manage.py syncdb
+Creating tables ...
+Creating table auth_permission
+Creating table auth_group_permissions
+Creating table auth_group
+Creating table auth_user_user_permissions
+Creating table auth_user_groups
+Creating table auth_user
+Creating table django_content_type
+Creating table django_session
+Creating table django_admin_log
+Creating table schedulerApp_worksheet
+Creating table schedulerApp_worktime
+
+You just installed Django's auth system, which means you don't have any superuse
+rs defined.
+Would you like to create one now? (yes/no): NO
+Please enter either "yes" or "no": no
+Installing custom SQL ...
+Installing indexes ...
+Installed 0 object(s) from 0 fixture(s)
+
+D:\docs\ruholla\Work\Arsh\traininig_prj\scheduler>python manage.py syncdb

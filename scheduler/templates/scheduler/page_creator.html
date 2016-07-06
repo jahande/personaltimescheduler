@@ -1,0 +1,553 @@
+{% extends 'scheduler/base.html' %}
+
+{% block customizeCss %}
+
+    <link href="/css/table2_css_.css" type="text/css" rel="stylesheet">
+{%  endblock %}
+{% block main %}
+    <div id="wholeTable">
+        <div id="tableTiltle"> Weekly Schedule</div>
+        <table id="calenderTable" style="background-color: white;">
+            <tbody>
+
+            <tr id="calenderTable_raw0" class="ruhiRaws">
+
+                <td class="ruhiRooms" id="calenderTable0+0">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+1">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+2">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+3">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+4">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+5">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+6">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+7">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+8">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+9">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+10">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+11">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+12">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+13">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+14">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+15">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+16">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+17">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+18">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+19">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+20">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+21">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+22">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+23">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+24">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+25">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+26">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+27">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable0+28">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+            </tr>
+            <tr id="calenderTable_raw1" class="ruhiRaws">
+                <td class="ruhiRooms" id="calenderTable1+0">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable1+1">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable1+2">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable1+3">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable1+4">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable1+5">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable1+6">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable1+7">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable1+8">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable1+9">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable1+10">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable1+11">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable1+12">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable1+13">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable1+14">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable1+15">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable1+16">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable1+17" colspan="3">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">نمدیسنتبی
+                    </div>
+                    <input type="text" class="EditingStateTextField" style="display: none;">
+
+                    <div class="EditOption"><a class="DelLink" id="calenderTable1+17remove"
+                                               onclick="delLabelActionOnClick(this);">Del</a><a class="EditLink"
+                                                                                                id="calenderTable1+17edit"
+                                                                                                onclick="editLabelActionOnClick(this);">Edit</a>
+                    </div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable1+20">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable1+21">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable1+22">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable1+23">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable1+24">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable1+25">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable1+26">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable1+27">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable1+28">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+            </tr>
+            <tr id="calenderTable_raw2" class="ruhiRaws">
+                <td class="ruhiRooms" id="calenderTable2+0">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+1">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+2">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+3">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+4">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+5">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+6">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+7">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+8">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+9">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+10">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+11">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+12">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+13">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+14">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+15">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+16">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+17">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+18">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+19">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+20">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+21">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+22">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+23">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+24">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+25">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+26">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+27">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable2+28">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+            </tr>
+            <tr id="calenderTable_raw3" class="ruhiRaws">
+                <td class="ruhiRooms" id="calenderTable3+0">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+1">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+2">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+3">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+4">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+5">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+6">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+7">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+8">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+9">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+10">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+11">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+12">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+13">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+14">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+15">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+16">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+17">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+18">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+19">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+20">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+21">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+22">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+23">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+24">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+25">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+26">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+27">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable3+28">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+            </tr>
+            <tr id="calenderTable_raw4" class="ruhiRaws">
+                <td class="ruhiRooms" id="calenderTable4+0">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+1">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+2">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+3">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+4">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+5">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+6">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+7">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+8">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+9">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+10">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+11">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+12">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+13">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+14">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+15">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+16">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+17">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+18">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+19">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+20">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+21">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+22">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+23">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+24">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+25">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+26">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+27">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable4+28">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+            </tr>
+            <tr id="calenderTable_raw5" class="ruhiRaws">
+                <td class="ruhiRooms" id="calenderTable5+0">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+1">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+2">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+3">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+4">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+5">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+6">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+7">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+8">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+9">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+10">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+11">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+12">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+13">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+14">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+15">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+16">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+17">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+18">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+19">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+20">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+21">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+22">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+23">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+24">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+25">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+26">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+27">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+                <td class="ruhiRooms" id="calenderTable5+28">
+                    <div onmouseup="cellMouseUp(this);" class="CellText" onmousedown="cellMouseDown(this);">&nbsp;</div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

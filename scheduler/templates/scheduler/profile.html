@@ -1,0 +1,29 @@
+{% extends 'scheduler/scheduler2_base.html' %}
+{% block head %}
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <LINK REL=StyleSheet HREF="/css/profile.css" TYPE="text/css" MEDIA=screen>
+    <LINK REL=StyleSheet HREF="/css/baseStyle.css" TYPE="text/css" MEDIA=screen>
+
+    <title>سامانه ثبت ساعت</title>
+{% endblock %}
+{% block content %}
+    <div id='content'>
+    <div class='item'>
+        <img src="/media/{{ db_profile.image }}" alt="" />
+    </div>
+    <div style='float: left;' class='item'>
+    {% if form.errors %}
+        <p style="color: red;">
+            Please correct the error{{ form.errors|pluralize }} below.
+        </p>
+    {% endif %}
+    <form action="" enctype="multipart/form-data" method="POST">
+         <table>
+                {{ profileForm.as_table }}
+         </table>
+        {% csrf_token %}
+        <input type="submit" value="ثبت">
+    </form>
+    </div>
+    </div>
+{% endblock %}

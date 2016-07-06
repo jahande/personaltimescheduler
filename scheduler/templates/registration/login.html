@@ -1,0 +1,29 @@
+{% extends "scheduler/scheduler2_base.html" %}
+{% block head %}
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <LINK REL=StyleSheet HREF="/css/login.css" TYPE="text/css" MEDIA=screen>
+    <LINK REL=StyleSheet HREF="/css/baseStyle.css" TYPE="text/css" MEDIA=screen>
+
+    <title>سامانه ثبت ساعت</title>
+{% endblock %}
+{% block content %}
+
+    <div id='content'>
+{% if form.errors %}
+    <p class="error">Sorry, that's not a valid username or password</p>
+{% endif %}
+<form action="?next=scheduler2/0" method="post">
+    <label for="username">User name:</label>
+    <input type="text" name="username" value="" id="username">
+    <label for="password">Password:</label>
+    <input type="password" name="password" value="" id="password">
+    <input type="submit" value="login" />
+    <input type="hidden" name="next" value="{{ next|escape }}" />
+    {% csrf_token %}
+</form>
+        <div>
+            if you have not account yet you can sign up <a href="/accounts/signup">here</a>
+        </div>
+    </div>
+
+{% endblock %}

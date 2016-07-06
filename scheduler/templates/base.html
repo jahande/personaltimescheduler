@@ -1,0 +1,28 @@
+{% block head %}
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    {% block baseCss %}
+        <LINK REL=StyleSheet HREF="/css/baseStyle.css" TYPE="text/css" MEDIA=screen>
+    {% endblock %}
+    {% block customizeCss %}
+        {% endblock %}
+        {% block title %}<title>سامانه ثبت ساعت</title>
+            {% endblock %}
+{% endblock %}
+
+{% block body %}
+    {% block user %}
+    {% endblock %}
+    {% block header %}
+        <div id="header">
+            <div id="arm">
+                <img height="100%" width="auto" src="/image/arshco.jpg" alt="arshco">
+            </div>
+            <div id="headertext" dir="rtl">سامانه‌ی ثبت ساعت شرکت عرش</div>
+        </div>
+    {% endblock %}
+    {% block content %}
+
+    {% endblock %}
+    {% block sidebar %}
+    {% endblock %}
+{% endblock %}

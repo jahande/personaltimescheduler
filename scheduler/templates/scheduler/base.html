@@ -1,0 +1,36 @@
+
+{% block CSS %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}creator/css/admin.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="{{ STATIC_URL }}lib/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+{% endblock %}
+
+{% block JS %}
+    <script type="text/javascript" src="{{ STATIC_URL }}lib/fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}creator/js/admin.js"></script>
+{% endblock %}
+
+{% block content %}
+    <div id="header" class="true clearfix">
+        سامانه مدیریت محتوا
+    </div>
+    <div id="content">
+        <div id="sidebar">
+            {% block sidebar %}{% endblock %}
+        </div>
+        <div id="main-box" class="g-box">
+            {% block main %}{% endblock %}
+        </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    <div id="footer">
+        <div class="upper_footer">
+            <div id="footer-logo" style="text-align: center">
+                <a href="http://arsh.co">
+                    <img src="{{ STATIC_URL }}images/arsh_footprint.png"/>
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

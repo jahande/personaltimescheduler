@@ -1,0 +1,29 @@
+#content{
+position:fixed;
+    top:30%;
+    left: 10%;
+    /*margin-left:auto;
+    margin-right:auto;
+    */
+    background-color: window;
+    width: 80%;
+    height: 60%;
+
+
+    border-style:inset;
+    border-width:5px;
+    border-color:#dda0dd;
+
+    direction: rtl;
+
+    font-family: "B nazanin";
+}
+.item{
+    padding-left: 10px;
+    float: left;
+    list-style-type: none;
+    background-color: none;
+    display: block;
+    margin-top: 0px;
+    text-decoration: none;
+}

@@ -1,0 +1,20 @@
+{% extends 'scheduler/scheduler2_base.html' %}
+{% block customizeSchedulerCss %}
+    <LINK REL=StyleSheet HREF="/css/logout.css" TYPE="text/css" MEDIA=screen>
+{% endblock %}
+{% block user %}
+    <div id='user'>
+    <ul id='profileUl'>
+    <li class='profileItem'>
+        <a class='profileItem' href='/accounts/logout/?next=/scheduler2/0'>
+            login
+        </a>
+    </li>
+    </ul>
+    </div>
+{% endblock %}
+{% block content %}
+    <div id='content'>
+you’ve successfully logged out
+    </div>
+{% endblock %}

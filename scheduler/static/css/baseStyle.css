@@ -1,0 +1,84 @@
+#user{
+    position:fixed;
+    top:2%;
+    left: 10%;
+    /*margin-left:auto;
+    margin-right:auto;
+    */
+    width: 80%;
+    height: 5%;
+
+    background-color: #ffffff;
+    border-style:outset;
+    border-width:5px;
+    border-color:#dda0dd;
+    font-family: titr;
+
+    float: left;
+}
+#profileUl{
+    margin: 0;
+    padding: 0;
+}
+.profileItem{
+    padding-left: 10px;
+   float: left;
+    list-style-type: none;
+    background-color: none;
+    display: block;
+    margin-top: 0px;
+    text-decoration: none;
+
+}
+#header{
+    position:fixed;
+    top:10%;
+    left: 10%;
+    /*margin-left:auto;
+    margin-right:auto;
+    */
+    width: 80%;
+    height: 15%;
+
+    background-color: #ffffff;
+    border-style:outset;
+    border-width:5px;
+    border-color:#dda0dd;
+    font-family: titr;
+}
+body{
+    background: url("/image/blgr065.jpg") repeat;
+}
+
+#arm{
+    position:relative;
+    top:5%;
+    left: 1%;
+    /*margin-left:auto;
+    margin-right:auto;
+    */
+    width: 10%;
+    height: 90%;
+    background-color:#ffffff;
+
+    /*border-style:inset;
+    border-width:5px;
+    border-color: #dda0dd;*/
+}
+#headertext{
+    position:relative;
+    top:-75%;
+    left: 48%;
+    /*float: left;*/
+
+    /*margin-left:auto;
+    margin-right:auto;
+    */
+    width: 50%;
+    height: 90%;
+
+    color: #483d8b;
+
+    font-size: xx-large;
+
+}
